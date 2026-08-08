@@ -1,6 +1,6 @@
 # SciSpell — an NLP correction & sentiment laboratory
 
-**Live app:** *(link coming in Step 2)* · Built from first principles, measured at every step.
+**Live app:** https://scispell.streamlit.app · Built from first principles, measured at every step.
 
 Two engines, one discipline: a **spelling corrector** that learned English from
 Darwin, Einstein and Faraday — then got re-armed with a modern news language
