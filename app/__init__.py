@@ -1,0 +1,1 @@
+"""SciSpell application package."""

@@ -1,0 +1,29 @@
+{
+ "non_word": {
+  "test_set": "Wikipedia common misspellings (4,208 evaluable pairs)",
+  "policy": "tiered",
+  "lambda": 3.0,
+  "accuracy_at_1": 0.8092,
+  "accuracy_at_5": 0.9596,
+  "mrr": 0.8743,
+  "latency_ms": {
+   "median": 40.79,
+   "p95": 94.8
+  },
+  "failure_taxonomy": {
+   "no_candidates": 24,
+   "truth_beyond_tier2": 197,
+   "near_miss_2_5": 559,
+   "deep_miss": 27,
+   "honest_ambiguity_share_of_near_misses": "477/559"
+  }
+ },
+ "real_word": {
+  "protocol": "corpus corruption, 2000 corrupted + 2000 clean, seed 42",
+  "margin_shipped": 8.0,
+  "recall": 0.9445,
+  "fp_rate_training_text": 0.0,
+  "repair_correct_when_fired": 1.0,
+  "caveat": "clean-side FP deflated by language-model memorisation of training text"
+ }
+}

@@ -1,0 +1,13 @@
+# heavy raw downloads — every notebook re-fetches these itself
+data/raw/
+
+# exceeds GitHub's 100MB file limit; app degrades gracefully without it
+data/distilbert_sentiment/
+
+# python noise
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+venv/
+.venv/

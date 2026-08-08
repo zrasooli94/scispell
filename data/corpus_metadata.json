@@ -1,0 +1,67 @@
+{
+  "project": "SciSpell — domain-aware spelling correction",
+  "domain": "Science (biology, physics, chemistry)",
+  "created": "2026-08-03",
+  "licence": "Source texts are public domain (Project Gutenberg)",
+  "books": [
+    {
+      "gutenberg_id": 1228,
+      "author": "Charles Darwin",
+      "title": "On the Origin of Species (1st ed.)",
+      "field": "Biology",
+      "source_url": "https://www.gutenberg.org/ebooks/1228",
+      "characters": 932990,
+      "approx_words": 155526
+    },
+    {
+      "gutenberg_id": 30155,
+      "author": "Albert Einstein",
+      "title": "Relativity: The Special and General Theory",
+      "field": "Physics",
+      "source_url": "https://www.gutenberg.org/ebooks/30155",
+      "characters": 185570,
+      "approx_words": 31077
+    },
+    {
+      "gutenberg_id": 14474,
+      "author": "Michael Faraday",
+      "title": "The Chemical History of a Candle",
+      "field": "Chemistry",
+      "source_url": "https://www.gutenberg.org/ebooks/14474",
+      "characters": 222486,
+      "approx_words": 41712
+    }
+  ],
+  "total_characters": 1341652,
+  "total_approx_words": 228315,
+  "tokenization": {
+    "pattern": "[a-z]+(?:'[a-z]+)?",
+    "lowercased": true,
+    "tokens": 229325,
+    "types": 8895,
+    "type_token_ratio": 0.03879,
+    "hapax_legomena": 2860,
+    "hapax_share": 0.3215
+  },
+  "zipf": {
+    "alpha_midrange": 1.0,
+    "fit_range": [
+      10,
+      1000
+    ],
+    "alpha_fullrange": 1.424
+  },
+  "dictionary": {
+    "design": "two-layer (domain frequencies + general coverage)",
+    "coverage_layer_size": 370081,
+    "coverage_layer_source": "dwyl/english-words words_alpha.txt",
+    "domain_layer_size": 8895,
+    "domain_only_kept": 204,
+    "ocr_filtered_out": 168,
+    "min_domain_frequency": 2,
+    "blocklist_size": 296,
+    "blocklist_source": "Wikipedia: Lists of common misspellings (For machines)",
+    "final_size": 376407,
+    "contractions_added_from_cmudict": 0
+  }
+}

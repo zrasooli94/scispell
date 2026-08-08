@@ -1,0 +1,23 @@
+{
+ "dataset": "IMDB Large Movie Review Dataset (Maas et al., 2011)",
+ "rows": 50000,
+ "train_clean_rows": 24902,
+ "length_words": {
+  "mean": 228.9,
+  "median": 171,
+  "p95": 585,
+  "over_512_share": 0.072
+ },
+ "integrity": {
+  "within_split_duplicates": 299,
+  "cross_class_texts": 0,
+  "train_test_leakage": 123,
+  "leakage_share_of_test": 0.005
+ },
+ "findings": [
+  "length not a confound",
+  "evaluation adjectives dominate",
+  "negation weak at unigram level -> bigrams",
+  "entity leakage (director/actor names as sentiment signals)"
+ ]
+}

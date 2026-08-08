@@ -1,0 +1,61 @@
+{
+  "winner": "Logistic Regression",
+  "winner_params": {
+    "clf__C": "4",
+    "vec__ngram_range": "(1, 2)"
+  },
+  "test_metrics": {
+    "acc": 0.9054,
+    "prec": 0.9041,
+    "rec": 0.907,
+    "f1": 0.9056
+  },
+  "all_models_test": {
+    "VADER (baseline)": {
+      "acc": 0.7,
+      "prec": 0.652,
+      "rec": 0.859,
+      "f1": 0.741
+    },
+    "Naive Bayes": {
+      "acc": 0.8565,
+      "prec": 0.8813,
+      "rec": 0.8239,
+      "f1": 0.8516
+    },
+    "Logistic Regression": {
+      "acc": 0.9054,
+      "prec": 0.9041,
+      "rec": 0.907,
+      "f1": 0.9056
+    },
+    "Linear SVM": {
+      "acc": 0.9006,
+      "prec": 0.8954,
+      "rec": 0.907,
+      "f1": 0.9012
+    }
+  },
+  "cv_tuned": {
+    "Naive Bayes": 0.8375,
+    "Logistic Regression": 0.8858,
+    "Linear SVM": 0.8825
+  },
+  "references": {
+    "maas_2011": 0.889,
+    "nbsvm_2012": 0.912,
+    "distilbert_cited": 0.928
+  },
+  "caveats": [
+    "0.50% train/test text leakage",
+    "entity leakage (EDA)",
+    "binary polar construction",
+    "movie-domain English only"
+  ],
+  "v2": {
+    "model": "SoftVote(tfidf-LR + NBSVM(1,2))",
+    "cv_shuffled": 0.9114,
+    "test_acc": 0.9125,
+    "note": "classical ceiling matched (W&M 91.2); ens(1,3) CV 91.31 untested by protocol"
+  }
+}
